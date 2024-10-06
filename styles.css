@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Dark gray text color for better contrast */
+    background-color: #e0f2f7; /* Light sky blue background */
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ... other styles ... */
+
+header {
+    background-color: #98c1d9; 
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-content { /* New style for the flex container */
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    margin-right: 30px; 
+}
+
+/* ... rest of the styles ... */
+/* ... (rest of the CSS remains the same) */
+
+.logo img {
+    max-height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 30px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #f0a500; /* Gold/Orange on hover */
+}
+
+/* Hero Section Styles */
+#hero {
+    padding: 100px 0;
+    text-align: center; /* Center content on smaller screens */
+}
+
+#hero .container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    gap: 30px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    display: none; /* Hide image on smaller screens initially */
+}
+
+/* Services Section Styles */
+#services {
+    padding: 80px 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 30px;
+}
+
+.service {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;
+}
+
+.service img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Responsive Styles (for larger screens) */
+@media (min-width: 768px) {
+    #hero .container {
+        grid-template-columns: 1fr 1fr; /* Two columns on larger screens */
+        text-align: left; 
+    }
+
+    .hero-image {
+        display: block;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+}
